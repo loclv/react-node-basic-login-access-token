@@ -19,6 +19,7 @@
 ```sh
 node -v # >= 10.0.0
 npm -v # >= 6.9.0
+cd react-node-basic-login-access-token
 cd backend
 npm i
 npm run # localhost:4000
@@ -29,4 +30,6 @@ npm run # localhost:3000
 
 It should automatically redirect you to the localhost:3000
 
-login with username/password: ha@gmail.com/ha (for demo)
+for demo login with
+- username: `ha@gmail.com`
+- password: `ha`
