@@ -17,6 +17,7 @@
 ## how to run on localhost
 
 ```sh
+node -v # >=10.0.0
 cd backend
 npm i
 npm run # localhost:4000
