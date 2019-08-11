@@ -33,3 +33,5 @@ It should automatically redirect you to the localhost:3000
 for demo login with
 - username: `ha@gmail.com`
 - password: `ha`
+
+after login you will receive the access token
