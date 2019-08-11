@@ -8,13 +8,18 @@ export default function handleClick(payload) {
 
     const status = response.status;
     if (status === 200) {
-      console.log('Login successfull');
+      const info = 'Login successfull';
+
+      console.log(info);
+      alert(info);
+      alert(`token: ${response.data.token}`);
     } else if (status === 401) {
       console.log('Username password do not match');
       alert(response);
     } else {
-      console.log('Username does not exists');
-      alert('Username does not exist');
+      const info = 'Username does not exists';
+      console.log(info);
+      alert(info);
     }
   }).catch(function(error) {
     console.log(error);
