@@ -9,6 +9,8 @@ var config = require('../config');
 var User = require('../user/User');
 var VerifyToken = require('./VerifyToken');
 
+const SECONDS_24HOURS = 86400;
+
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
@@ -25,7 +27,7 @@ router.post('/register', function(req, res) {
     if (err) return res.status(500).send("There was a problem registering the user.")
     // create a token
     var token = jwt.sign({ id: user._id }, config.secret, {
-      expiresIn: 86400 // expires in 24 hours
+      expiresIn: SECONDS_24HOURS
     });
     res.status(200).send({ auth: true, token: token });
   });
@@ -52,7 +54,7 @@ router.post('/login', function(req, res) {
     if (!passwordIsValid) return res.status(401).send({ auth: false, token: null });
 
     var token = jwt.sign({ id: user._id }, config.secret, {
-      expiresIn: 86400 // expires in 24 hours
+      expiresIn: SECONDS_24HOURS
     });
 
     res.status(200).send({ auth: true, token: token });
