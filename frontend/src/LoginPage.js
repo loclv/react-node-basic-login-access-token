@@ -23,7 +23,7 @@ class LoginPage extends Component {
     this.setState({ submitted: true });
     const { email, password } = this.state;
     if (email && password) {
-        handleLogin({ email, password });
+      handleLogin({ email, password });
     }
   }
 
