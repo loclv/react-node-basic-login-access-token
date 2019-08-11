@@ -16,10 +16,12 @@
 
 ## how to run on localhost
 
-```
+```sh
 cd backend
+npm i
 npm run # localhost:4000
 cd ../frontend
+npm i
 npm run # localhost:3000
 ```
 
