@@ -1,8 +1,12 @@
 # react-node-basic-login-access-token
 
-## used
+TODO: This demo project is not runnable anymore, since it is no longer maintain a long time.
+
+## Folder structure
 
 ### frontend
+
+Using:
 
 - create-react-app
 - connection: axios
@@ -10,28 +14,30 @@
 
 ### backend
 
-- nodejs
+Using:
+
+- Node.js
 - mongodb (cloud)
 - jsonwebtoken
 
-## how to run on localhost
+## Development
 
 ```sh
-node -v # >= 10.0.0
-npm -v # >= 6.9.0
-cd react-node-basic-login-access-token
 cd backend
-npm i
-npm run # localhost:4000
+pnpm i
+pnpm start
+# localhost:4000
 cd ../frontend
-npm i
-npm run # localhost:3000
+pnpm i
+pnpm start
+# localhost:3000
 ```
 
-It should automatically redirect you to the localhost:3000
+It should automatically redirect you to the `localhost:3000`.
 
-for demo login with
+For demo login with:
+
 - username: `ha@gmail.com`
 - password: `ha`
 
-after login you will receive the access token
+After login you will receive the access token.
